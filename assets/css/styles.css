@@ -1,0 +1,175 @@
+.background-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#videoBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+
+}
+
+#signature {
+    width: 300px;
+}
+
+#homePage {
+    margin-top: 250px;
+}
+
+#aboutPage {
+    background-color: #fff;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.fab {
+    color: white;
+    width: 50px;
+    height: 50px;
+    z-index: 2; 
+}
+
+#homeTextCol {
+    background-color: #666;
+    margin-right: 10px;
+}
+
+#homePhotoCol {
+    border: solid 5px #666;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#processPage {
+    background-color: #ccc;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#portfolioPage {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#contactPage {
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#headShot {
+    width: 100%;
+}
+
+#logo {
+    padding-bottom: 60px;
+}
+
+#changingTitles {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    font-family: "Helvetica Neue", "Helvetica";
+    padding-top: 50px;
+}
+
+.pageTitle {
+    font-family:'Over the Rainbow', cursive;
+}
+
+.footer {
+    height: 80px;
+    border-top: 2px solid #333;
+    background-color: #666;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    #homeTextCol {
+        margin-right: 0px;
+    }
+    
+    #homePhotoCol {
+        border: solid 3px #666;
+        padding: 20px 8px 8px 8px;
+        margin-left: 0px;
+    }
+    #headShot {
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    nav {
+        height: 100px;
+    }
+
+    #logo {
+        padding-bottom: 0px;
+    }
+
+    #signature {
+        width: 50%;
+        display: inline;
+    }
+    #homePage {
+        margin-top: 120px;
+    }
+
+    #homeTextCol {
+        margin-right: 0px;
+    }
+    
+    #homePhotoCol {
+        border: solid 2px #666;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    #headShot {
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    #homeTextCol {
+        margin-right: 0px;
+    }
+    
+    #homePhotoCol {
+        border: solid 2px #666;
+        padding: 2px;
+        margin-left: 0px;
+    }
+    #headShot {
+        height: 100%;
+    }
+
+}
