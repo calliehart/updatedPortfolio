@@ -79,13 +79,33 @@
     </div>
     <div class="container" id="portfolioPage">
         <div class="row">
-            <div class="col pageTitle">
-                <h1>Portfolio</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-
+            <div class="col-8 offset-2">
+                <div class="row">
+                    <div class="col pageTitle">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    
+                    </div>
+                </div>
+                <div class="row projLinks">
+                    <div class="col">
+                        <a href="https://huntertrammell.github.io/Films-With-Friends/" target="_blank"><img src="assets/images/filmsPlusFriends.jpg" alt="Films Plus Friends" class="projectThumb"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://calliehart.github.io/unit-4-game/" target="_blank"><img src="assets/images/goodJobBrain.jpg" alt="Good Job, Brain Trivia" class="projectThumb"></a>
+                    </div>
+                </div>
+                <div class="row projLinks">
+                    <div class="col">
+                        <a href="https://calliehart.github.io/WordGuessGame/" target="_blank"><img src="assets/images/hangman.jpg" alt="Word Guess Game" class="projectThumb"></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -114,18 +134,18 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <form action="" id="contactForm" method="post">
+                        <form action="" id="contactForm" method="POST">
                             <div class="form-group">
-                                    <input type="text" class="form-control" id="nameForm" aria-describedby="SenderName" placeholder="Full Name">
+                                    <input type="text" class="form-control" id="nameForm" name="name" aria-describedby="SenderName" placeholder="Full Name">
                             </div>
                             <div class="form-group">
-                                    <input type="email" class="form-control" id="emailForm" aria-describedby="SenderEmail" placeholder="Email Address">
+                                    <input type="email" class="form-control" id="emailForm" name="email" aria-describedby="SenderEmail" placeholder="Email Address">
                             </div>
                             <div class="form-group">
-                                    <input type="text" class="form-control" id="subjectForm" aria-describedby="SenderSubject" placeholder="Subject of Email">
+                                    <input type="text" class="form-control" id="subjectForm" name="subject" aria-describedby="SenderSubject" placeholder="Subject of Email">
                             </div>
                             <div class="form-group">
-                                    <textarea type="text" class="form-control" id="messageForm" rows="8" aria-describedby="SenderMessage" placeholder="Your Message"></textarea>
+                                    <textarea type="text" class="form-control" id="messageForm" rows="8" name="message" aria-describedby="SenderMessage" placeholder="Your Message"></textarea>
                             </div>
                             <button type="submit" class="btn btn-dark btn-block">Send</button>
                         </form>
@@ -141,6 +161,19 @@
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/portfolio.js"></script> 
+
+<?php
+    if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        $admin = "callie.c.hart@gmail.com";
+
+        $headers = "Reply-to: $email";
+        mail($admin, $subject, $message, $headers);
+    }
+?>
     
 </body>
 </html>

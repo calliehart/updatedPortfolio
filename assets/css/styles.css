@@ -175,6 +175,15 @@ h6 {
     margin-top: 10px;
 }
 
+.projectThumb {
+    width: 300px;
+    padding: 20px;
+}
+
+.projLinks {
+    text-align: center;
+}
+
 .footer {
     height: 80px;
     background-color: #ccc;
