@@ -26,6 +26,19 @@ nav {
 
 }
 
+.scrolled-nav {
+    height: 80px;
+}
+
+.scrolled-nav #logo  {
+    padding-bottom: 0;
+}
+
+.scrolled-nav #signature {
+    visibility: collapse;
+    height: 0;
+}
+
 #signature {
     width: 300px;
 }
@@ -35,31 +48,34 @@ nav {
 }
 
 #aboutPage {
-    background-color: #fff;
+    background-color: #f2f2f2;
     height: 100vh;
     margin-top: 100px;
 }
 
 .fab {
-    color: white;
-    width: 50px;
-    height: 50px;
-    z-index: 2; 
+    color: #f2f2f2;
+    z-index: 2;
+    padding: 2px; 
+}
+
+#linkingInfo {
+    text-align: center;
 }
 
 #homeTextCol {
-    background-color: #666;
+    background-color: #31A7AF;
     margin-right: 10px;
 }
 
 #homePhotoCol {
-    border: solid 5px #666;
+    border: solid 5px #b8a279;
     padding: 10px;
     margin-left: 10px;
 }
 
 #processPage {
-    background-color: #ccc;
+    background-color: #e5e5e5;
     height: 100vh;
     margin-top: 100px;
 }
@@ -79,26 +95,89 @@ nav {
     width: 100%;
 }
 
+#contactForm {
+    margin-top: 20px;
+}
+
+#contactForm input {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px #b8a279 solid;
+    color: #666;
+}
+
+#contactForm textarea {
+    background: transparent;
+    border: 2px #b8a279 solid;
+    border-radius: 0;
+    color: #666;
+}
+
+
+.btn-dark {
+    border-radius: 0;
+    background: #b8a279;
+    border: 1px solid #b8a279;
+}
+
+.btn-dark:hover {
+    background: #666;
+    border: 1px solid #666;
+}
+
 #logo {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+}
+
+#navLinkDiv {
+    margin-bottom: 20px;
 }
 
 #changingTitles {
-    color: #fff;
+    color: #f2f2f2;
     font-size: 36px;
     text-align: center;
-    font-family: "Helvetica Neue", "Helvetica";
+    font-family: 'Fjalla One', sans-serif;
     padding-top: 50px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+h6 {
+    color: #f2f2f2;
+    font-size: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 5px;
 }
 
 .pageTitle {
-    font-family:'Over the Rainbow', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    color: #31A7AF; 
+}
+
+#aboutTitle, #processTitle  {
+    border-bottom: 2px solid #b8a279;
+}
+
+#aboutText {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 20px;
+    color: #666;
+}
+
+.emailLink {
+    color: #f2f2f2;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .footer {
     height: 80px;
-    border-top: 2px solid #333;
-    background-color: #666;
+    background-color: #ccc;
     text-align: center;
     padding-top: 20px;
 }
