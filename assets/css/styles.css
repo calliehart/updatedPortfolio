@@ -16,6 +16,21 @@
     min-width: 100%;
 }
 
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #666;
+}
+
+h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 12pt;
+    color: #31A7AF;
+}
+
+p {
+    color: #333;
+}
+
 nav {
     position: fixed;
     left: 0;
@@ -23,11 +38,13 @@ nav {
     z-index: 1;
     width: 100%;
     height: 200px;
+    padding-top: 80px;
 
 }
 
 .scrolled-nav {
     height: 80px;
+    padding-top: 20px;
 }
 
 .scrolled-nav #logo  {
@@ -51,6 +68,10 @@ nav {
     background-color: #f2f2f2;
     height: 100vh;
     margin-top: 100px;
+}
+
+.projLinks {
+    margin: 50px 0;
 }
 
 .fab {
@@ -77,17 +98,18 @@ nav {
 #processPage {
     background-color: #e5e5e5;
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #portfolioPage {
-    height: 100vh;
-    margin-top: 100px;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #contactPage {
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -179,13 +201,10 @@ h6 {
 }
 
 .projectThumb {
-    width: 300px;
-    padding: 20px;
+    width: 100%;
+    padding: 0px 20px;
 }
 
-.projLinks {
-    text-align: center;
-}
 
 .footer {
     height: 80px;
@@ -215,10 +234,6 @@ h6 {
     }
     .emailLink {
         margin-bottom: 10px;
-    }
-    #portfolioPage {
-        height: 100%;
-        padding-bottom: 30px;
     }
    
 

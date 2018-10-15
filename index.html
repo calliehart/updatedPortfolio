@@ -21,10 +21,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-          <a href="#" class="navbar-brand navbar-expand-sm">
+          <!---<a href="#" class="navbar-brand navbar-expand-sm">
                 <img src="assets/images/logo.svg" alt="Callie Hart Logo" class="mx-auto w-25" id="logo">
-            </a>
-            <img src="assets/images/signature.svg" alt="Callie Hart Signature" class="mx-auto d-block slideInUp" id="signature">
+            </a>--->
+            <img src="assets/images/signature.svg" alt="Callie Hart Signature" class="mx-auto d-block" id="signature">
+            
             <div class="collapse navbar-collapse" id="toggleNav">
                 <div class="navbar-nav mx-auto" id="navLinkDiv">
                     <a href="#" class="nav-item nav-link active">HOME</a>
@@ -79,7 +80,7 @@
     </div>
     <div class="container" id="portfolioPage">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-10 offset-lg-2 offset-md-2 offset-sm-1">
+            <div class="col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
                 <div class="row">
                     <div class="col pageTitle">
                         <h1>Portfolio</h1>
@@ -91,19 +92,51 @@
                     </div>
                 </div>
                 <div class="row projLinks">
-                    <div class="col">
+                    <div class="col-6">
                         <a href="https://huntertrammell.github.io/Films-With-Friends/" target="_blank"><img src="assets/images/filmsPlusFriends.jpg" alt="Films Plus Friends" class="projectThumb"></a>
                     </div>
-                    <div class="col">
-                        <a href="https://calliehart.github.io/unit-4-game/" target="_blank"><img src="assets/images/goodJobBrain.jpg" alt="Good Job, Brain Trivia" class="projectThumb"></a>
+                    <div class="col-6 projDes">
+                        <h3>Films Plus Friends</h3>
+                        <p>Films + Friends is a service aimed at helping users plan what movies to watch with their friends.
+                        The user selects a genre and rating and we return 5 movies from the OMDB API. These results are editable allowing the user 
+                        to remove any movies and then add in one of their choice through a search. The app then sends out inviations for everyone invited to vote 
+                        for the movie of their choice. Once all votes are in everyone receives an email with the winning title. 
+                        </p>
+                        <a href="https://github.com/huntertrammell/Films-With-Friends"><h4>View The Code</h4></a>
                     </div>
                 </div>
                 <div class="row projLinks">
-                    <div class="col">
+                    <div class="col-6">
+                        <a href="https://calliehart.github.io/TriviaGame/" target="_blank"><img src="assets/images/goodJobBrain.jpg" alt="Good Job, Brain Trivia" class="projectThumb"></a>
+                    </div>
+                    <div class="col-6 projDes">
+                        <h3>Good Job, Brain Trivia Based Game</h3>
+                        <p>A simple browser trivia game designed to challenge the user to answer 6 trivia questions from any of the 3 possible randomized quizes within a defined time.</p>
+                        <a href="https://github.com/calliehart/TriviaGame"><h4>View The Code</h4></a>
+                    </div>
+                </div>
+                <div class="row projLinks">
+                    <div class="col-6">
                         <a href="https://calliehart.github.io/WordGuessGame/" target="_blank"><img src="assets/images/hangman.jpg" alt="Word Guess Game" class="projectThumb"></a>
                     </div>
-                    <div class="col">
-                        <a href=""><img src="" alt=""></a>
+                    <div class="col-6 projDes">
+                        <h3>Country Themed Word Guess Game</h3>
+                        <p>Guess which countries name is hiding in this hangman styled game. Users get a limited amount of guesses for letters within the word.
+                            If the word is guessed before all guesses are used, the user wins.  
+                        </p>
+                        <a href="https://github.com/calliehart/WordGuessGame"><h4>View The Code</h4></a>
+                    </div>
+                </div>
+                <div class="row projLinks">
+                    <div class="col-6">
+                        <a href="https://calliehart.github.io/unit-4-game/" target="_blank"><img src="assets/images/RPGGame.jpg" alt="Powerpuff Game" class="projectThumb"></a>
+                    </div>
+                    <div class="col-6 projDes">
+                        <h3>Powerpuff Girls Themed Battle Game</h3>
+                        <p>This is a simple browser game designed to challenge the user to figure out what order of defeating opponent characters is necessary to win the game. 
+                            The user must win all 3 rounds to win the game. 
+                        </p>
+                        <a href="https://github.com/calliehart/unit-4-game"><h4>View The Code</h4></a>
                     </div>
                 </div>
             </div>
@@ -159,7 +192,7 @@
         <a href="https://calliehart.github.io" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
         <h6>Copyright &#169 calliehart.design</h6>
     </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/js/portfolio.js"></script> 
 
 <?php
