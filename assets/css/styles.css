@@ -51,10 +51,10 @@ nav {
     padding-bottom: 0;
 }
 
-.scrolled-nav #signature {
+/* .scrolled-nav #signature {
     visibility: collapse;
     height: 0;
-}
+}*/
 
 #signature {
     width: 300px;
@@ -244,6 +244,7 @@ h6 {
 @media only screen and (max-width: 575px) {
     nav {
         height: 100px;
+        padding-top: 20px;
     }
 
     #logo {
