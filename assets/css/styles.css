@@ -72,6 +72,8 @@ nav {
 
 .projLinks {
     margin: 50px 0;
+    border-bottom: 2px solid #b8a279;
+    padding-bottom: 50px;
 }
 
 .fab {
