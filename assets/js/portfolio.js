@@ -1,16 +1,18 @@
 const descriptive = ["DESIGNER", "FRONT-END DEVELOPER", "RESEARCHER", "CREATOR"];
-let counter = 0;
+let counter = 1;
 
 function descriptiveLoop() {
     if (counter < descriptive.length) {
         $("#changingTitles").empty();
         $("#changingTitles").append(descriptive[counter]);
         counter++;
-    } else {
-        counter = 0;
+        if (counter === descriptive.length) {
+            counter = 0;
+        }
     };
 };
 
+$("#changingTitles").append(descriptive[0]);
 setInterval(descriptiveLoop, 2000);
 
 $(document).ready(function(){
